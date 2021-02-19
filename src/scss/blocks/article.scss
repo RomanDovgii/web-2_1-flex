@@ -27,7 +27,7 @@
   }
 
   &--flex-wrap-enabled {
-
+    flex-wrap: wrap;
   }
 
   &--flex-direction {
@@ -118,6 +118,18 @@
   .article__list {
     flex-wrap: wrap;
     height: auto;
+
+    &--flex-wrap {
+      flex-wrap: nowrap;
+
+      max-width: 100%;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    &--flex-wrap-enabled {
+      flex-wrap: wrap;
+    }
   }
 
   .article__comment {

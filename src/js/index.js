@@ -10,7 +10,7 @@ const flexDirectionStatus = flexDirectionArticle.querySelector(`.article__status
 const flexDirectionChangeButton = flexDirectionArticle.querySelector(`.article__button`);
 
 const flexWrapArticle = document.querySelector(`.article--flex-wrap`);
-const flexWrapContainer = flexWrapArticle.querySelector(`.article__list`);
+const flexWrapContainer = flexWrapArticle.querySelector(`.article__list--flex-wrap`);
 const flexWrapStatus = flexWrapArticle.querySelector(`.article__status`);
 const flexWrapChangeButton = flexWrapArticle.querySelector(`.article__button`);
 
@@ -88,7 +88,7 @@ const changeWrapStatus = () => {
     currentWrapStatus = 0;
   }
 
-  flexWrapContainer.style.flexWrap = FLEX_WRAP_PROPERTIES[currentWrapStatus];
+  flexWrapContainer.classList.toggle(`article__list--flex-wrap-enabled`);
   flexWrapStatus.innerHTML = `${FLEX_WRAP_PROPERTIES[currentWrapStatus]}`;
 };
 
