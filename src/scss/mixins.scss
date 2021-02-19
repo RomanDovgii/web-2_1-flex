@@ -1,0 +1,25 @@
+@mixin reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin main-heading {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@mixin heading {
+  font-size: 24px;
+
+  overflow-wrap: break-word;
+}
+
+@mixin subheading {
+  font-size: 20px;
+
+  overflow-wrap: break-word;
+}
+
+@mixin text {
+  font-size: 18px;
+}

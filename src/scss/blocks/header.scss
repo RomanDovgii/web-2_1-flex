@@ -1,0 +1,34 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba($persian-blue, 0.4);
+
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrapper {
+   min-width: $md;
+}
+
+.header__heading {
+  color: $black-pearl;
+  text-align: center;
+  @include main-heading;
+}
+
+.header__navigation {
+  margin-top: 20px;
+}
+
+@media (max-width: $md) {
+  .header__wrapper {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: $layout-change) {
+  .header__heading {
+    font-size: 25px;
+  }
+}

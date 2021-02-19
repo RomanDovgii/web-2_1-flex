@@ -1,0 +1,38 @@
+.navigation__list {
+  list-style: none;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.navigation__item {
+  padding: 20px 10px;
+}
+
+.navigation__link {
+  color: $black-pearl;
+  text-decoration: none;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $layout-change) {
+  .navigation__list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .navigation__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

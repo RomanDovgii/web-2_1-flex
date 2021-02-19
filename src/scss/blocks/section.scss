@@ -1,0 +1,29 @@
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__heading {
+  @include heading;
+}
+
+.section__wrapper {
+  min-width: $md;
+}
+
+.section__heading {
+  text-align: center;
+}
+
+.section__article {
+  margin-top: 20px;
+}
+
+@media (max-width: $md) {
+  .section__wrapper {
+    min-width: 100%;
+  }
+}

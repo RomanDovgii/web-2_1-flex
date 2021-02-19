@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №1</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <h1 class="header__heading">Лабораторная работа №1</h1>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#axis-direction" class="navigation__link">
+              Направления осей
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#elements-sizes" class="navigation__link">
+              Размеры элементов
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#elements-positioning" class="navigation__link">
+              Выравнивание элементов
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#change-in-order" class="navigation__link">
+              Изменение порядка
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#nesting" class="navigation__link">
+              Вложенность
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__section section">
+      <div class="section__wrapper">
+        <h2 class="section__heading" id="axis-direction">Направления осей</h2>
+
+        <article class="section__article article article--flex-direction">
+          <h3 class="article__heading">flex-direction</h3>
+
+          <ul class="article__list article__list--flex-direction">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">flex-direction: <span class="article__status">row</span></p>
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--flex-wrap">
+          <h3 class="article__heading">flex-wrap</h3>
+
+          <ul class="article__list article__list--flex-wrap">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">flex-wrap: <span class="article__status">nowrap</span></p>
+
+          <p class="article__condition"></p>
+          <button class="article__button">Сменить</button>
+        </article>
+      </div>
+    </section>
+    <section class="main__section section">
+      <div class="section__wrapper">
+        <h2 class="section__heading" id="elements-sizes">Размеры элементов</h2>
+
+        <article class="section__article article article--flex-grow">
+          <h3 class="article__heading">flex-grow</h3>
+
+          <ul class="article__list article__list--grow">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item article__item--grow">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">flex-grow: <span class="article__status">0</span></p>
+
+          <p class="article__condition"></p>
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--flex-shrink">
+          <h3 class="article__heading">flex-shrink</h3>
+          <ul class="article__list article__list--flex-shrink">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item article__item--no-shrink">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">flex-shrink: <span class="article__status">1</span></p>
+
+          <p class="article__comment">Не видно на телефоне</p>
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--basis">
+          <h3 class="article__heading">flex-basis</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item article__item--basis">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">flex-basis: <span class="article__status">auto</span></p>
+
+          <p class="article__condition"></p>
+          <button class="article__button">Сменить</button>
+        </article>
+      </div>
+    </section>
+    <section class="main__section section">
+      <div class="section__wrapper">
+        <h2 class="section__heading" id="elements-positioning">Выравнивание элементов</h2>
+
+        <article class="section__article article article--justify">
+          <h3 class="article__heading">justify-content</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">justify-content: <span class="article__status">center</span></p>
+
+          <p class="article__condition"></p>
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--align-self">
+          <h3 class="article__heading">align-self</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item article__item--align-self">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">align-self: <span class="article__status">center</span></p>
+
+          <p class="article__comment">Не видно на телефоне</p>
+
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--align-items">
+          <h3 class="article__heading">align-items</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">align-items: <span class="article__status">center</span></p>
+
+          <p class="article__comment">Не видно на телефоне</p>
+
+          <p class="article__condition"></p>
+          <button class="article__button">Сменить</button>
+        </article>
+
+        <article class="section__article article article--align-content">
+          <h3 class="article__heading">align-content</h3>
+          <ul class="article__list article__list--align-content">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">align-content: <span class="article__status">stretch</span></p>
+
+          <p class="article__comment">Не видно на телефоне</p>
+
+          <button class="article__button">Сменить</button>
+        </article>
+      </div>
+    </section>
+    <section class="main__section section">
+      <div class="section__wrapper">
+        <h2 class="section__heading" id="change-in-order">Изменение порядка</h2>
+
+        <article class="section__article article article--order">
+          <h3 class="article__heading">order</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item article__item--order">
+              <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+            </li>
+            <li class="article__item">
+              <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+            </li>
+          </ul>
+
+          <p class="article__condition">order: <span class="article__status">0</span></p>
+          <button class="article__button">Сменить</button>
+        </article>
+      </div>
+    </section>
+    <section class="main__section section">
+      <div class="section__wrapper">
+        <h2 class="section__heading" id="nesting">Вложенность</h2>
+
+        <article class="section__article article">
+          <h3 class="article__heading">nesting</h3>
+          <ul class="article__list">
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=1" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=2" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=3" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=4" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=5" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=6" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=7" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=8" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=9" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=10" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=11" alt="lorem lorem lorem lorem">
+              </div>
+              <div class="article__sub-div">
+                <img src="https://picsum.photos/200?random=12" alt="lorem lorem lorem lorem">
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__developed-by">Разработано Довгим Романом Олеговичем, Московский Политех, группа 201-321, 2021-ый год</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
