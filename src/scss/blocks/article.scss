@@ -51,6 +51,12 @@
   &--grow {
     height: auto;
   }
+
+  &--gap {
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+  }
 }
 
 .article__item {
@@ -112,6 +118,14 @@
 
 .article__comment {
   display: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--experimental {
+    margin-top: 30px;
+    display: block;
+  }
 }
 
 @media (max-width: $layout-change) {
